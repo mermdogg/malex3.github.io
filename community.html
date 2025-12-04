@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the MUSE community to connect with fashion creatives and receive updates." />
+  <meta name="keywords" content="MUSE community, fashion network, sign up" />
+  <meta name="author" content="Meryem Alex" />
+  <title>MUSE — Community</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">MUSE</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="community.html">Community</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <h1>Join the Community</h1>
+        <p>Connect with other fashion lovers. Sign up to receive updates and opportunities.</p>
+      </div>
+    </section>
+
+    <section class="container form-section">
+      <form id="community-form" class="card" action="#" method="post">
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" placeholder="Your full name" required />
+          </label>
+          <label>
+            <span>Birthday</span>
+            <input name="birthday" type="date" required />
+          </label>
+          <label>
+            <span>City</span>
+            <input name="city" type="text" placeholder="e.g., Phoenix" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" placeholder="you@example.com" required />
+          </label>
+        </div>
+        <div class="cta-row left">
+          <button type="submit" class="btn primary">Sign Up</button>
+          <p class="help">Your info is stored locally in your browser. No emails are sent from this demo form.</p>
+        </div>
+      </form>
+
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MUSE • Built with love</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
